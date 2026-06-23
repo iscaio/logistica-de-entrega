@@ -2,9 +2,8 @@
   "name": "logistica-de-entregas",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "dev": "node --watch src/app.js"
+    "dev": "node --watch server.js"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +11,8 @@
   "description": "",
   "dependencies": {
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mongodb": "^7.3.0",
+    "mongoose": "^9.7.2"
   }
 }
