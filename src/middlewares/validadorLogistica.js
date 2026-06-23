@@ -1,9 +1,9 @@
 const { json } = require("express");
 
-const validadorEncomenda = (req, body, next) => {
+const validadorEncomenda = (req, res, next) => {
   const { nomeCliente, pesoPacote, TamanhoPacote, destinoDoPacote } = req.body;
 
-  if (req.body || Object.nomeCliente(req.body).length === 0) {
+  if (!nomeCliente?.trim()) {
     return res.status(400).json({ erro: "O Nome do Cliente não ser vazio!" });
   }
 
